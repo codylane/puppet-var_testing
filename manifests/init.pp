@@ -27,4 +27,12 @@ class var_testing(
     var => {},
   }
 
+  var_testing::show_var { 'test when var=0':
+    var => 0,
+  }
+
+  var_testing::show_var { 'test when var=1':
+    var => 1,
+  }
+
 }

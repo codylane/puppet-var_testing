@@ -9,7 +9,6 @@ See this page for more info of why this still might be an issue.
 https://tickets.puppetlabs.com/browse/PUP-1467
 
 
-
 # usage
 
 ## Testing puppet 3.8.7

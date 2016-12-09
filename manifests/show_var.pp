@@ -4,7 +4,6 @@ define var_testing::show_var(
 
 $template = @(OUTPUT_EOF)
 testing example '<%= @title %>'
-
 <%
 scope_result = {
   'result' => scope['var'],
@@ -16,9 +15,7 @@ scope_result = {
   '[]'     => [[]].include?(scope['var']),
   '{}'     => [{}].include?(scope['var']),
 }
--%>
 
-<%
 scope_lookup_result = {
   'result' => scope.lookupvar('var'),
   'type'   => scope.lookupvar('var').class,
@@ -29,9 +26,7 @@ scope_lookup_result = {
   '[]'     => [[]].include?(scope.lookupvar('var')),
   '{}'     => [{}].include?(scope.lookupvar('var')),
 }
--%>
 
-<%
 puppet_result = {
   'result' => @var,
   'type'   => @var.class,
@@ -42,8 +37,8 @@ puppet_result = {
   '[]'     => [[]].include?(@var),
   '{}'     => [{}].include?(@var),
 }
--%>
 
+-%>
 puppet result = <%= puppet_result %>
 scope result  = <%= scope_result %>
 scope lookup  = <%= scope_lookup_result %>
