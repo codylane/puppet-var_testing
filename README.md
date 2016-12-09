@@ -15,16 +15,15 @@ https://tickets.puppetlabs.com/browse/PUP-1467
 ## Testing puppet 3.8.7
 
 ```
-export PUPPET_GEM_VERSION='3.8.7'
-bundle update
-
-./test.sh
+./test.sh 3.8.7
 ```
 
-## Testing puppet 4
+## Testing puppet 4.5.2
 ```
-export PUPPET_GEM_VERSION='4.2.1'
-bundle update
+./test.sh 4.5.2
+```
 
+## Testing the latest puppet
+```
 ./test.sh
 ```
